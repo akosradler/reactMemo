@@ -12,6 +12,10 @@ on:
           - 'patch'
           - 'minor'
           - 'major'
+      release_notes:
+        description: 'Release Notes'
+        required: true
+        type: string
 
 jobs:
   test:
@@ -40,3 +44,4 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ env.GIT_TAG }}
+          body: ${{ github.event.inputs.release_notes }}
