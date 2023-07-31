@@ -31,3 +31,6 @@ jobs:
       - name: Push version update
         run: |
           git push origin master --follow-tags
+
+      - name: Create release
+        uses: softprops/action-gh-release@v1
