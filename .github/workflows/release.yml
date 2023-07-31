@@ -40,4 +40,11 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ env.GIT_TAG }}
-          body_path: ${{ github.workspace }}/changelog.md´
+          body_path: ${{ github.workspace }}/changelog.md
+
+      - name: Clear changelog.md
+        uses: jaywcjlove/github-action-modify-file-content@main
+        with:
+          path: changelog.md
+          body: ""
+          overwrite: 'true'
