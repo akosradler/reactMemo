@@ -14,7 +14,7 @@ on:
           - 'major'
 
 jobs:
-  test:
+  Publish-Release:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
