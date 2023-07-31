@@ -30,5 +30,4 @@ jobs:
 
       - name: Push version update
         run: |
-          git push origin master
-          git push --tags
+          git push origin master --follow-tags
