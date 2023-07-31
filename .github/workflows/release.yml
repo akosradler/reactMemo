@@ -40,4 +40,4 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ env.GIT_TAG }}
-          body_path: ${{ github.workflow }}/changelog.md´
+          body_path: ${{ github.workspace }}/changelog.md´
