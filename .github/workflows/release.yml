@@ -46,5 +46,5 @@ jobs:
         uses: jaywcjlove/github-action-modify-file-content@main
         with:
           path: changelog.md
-          body: ""
+          body: "No changelog has been provided for this release"
           overwrite: 'true'
