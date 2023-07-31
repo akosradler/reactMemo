@@ -32,5 +32,9 @@ jobs:
         run: |
           git push origin master --follow-tags
 
+      - name: Get tag name
+        run: | 
+          echo ${{github.ref_name}}
+
       - name: Create release
         uses: softprops/action-gh-release@v1
